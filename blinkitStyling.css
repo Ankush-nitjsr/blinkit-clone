@@ -73,9 +73,10 @@ header .container {
     width: 100%;
 }
 
-.login {
+.login, .login a {
     font-size: 20px;
     color: var(--color-grey);
+    text-decoration: none;
 }
 
 .cart {
