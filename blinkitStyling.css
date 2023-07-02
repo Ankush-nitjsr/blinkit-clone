@@ -64,7 +64,7 @@ header .container {
     border: 0;
     outline: 0;
     background-color: transparent;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 100;
     width: 100%;
 }
@@ -99,6 +99,8 @@ header .container {
 
 
 .itemsSection {
+    margin-top: 60px;
+    margin-left: 150px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -123,7 +125,7 @@ header .container {
     display: none;
 }
 
-.banner-2 .banner-img img {
+.banner-2 .section-image img {
     height: 165px;
     width: 285px;
 }
@@ -140,22 +142,89 @@ header .container {
 
 .items {
     display: flex;
-    gap: 20px;
-    overflow: auto scroll;
+    flex-direction: column;
     margin: 0 14px;
+    row-gap: 20px;
 }
 
-.list-items::-webkit-scrollbar {
-    display: none;
+.items .title {
+    display: flex;
+    justify-content: space-between;
 }
 
-.list-items .item-img img {
-    height: 165px;
-    width: 285px;
+.title .category-name {
+    font-weight: var(--fw-700);
 }
 
+.title a {
+    color: var(--color-green);
+    text-decoration: none;
+}
 
+.list-items {
+    display: flex;
+    column-gap: 15px;
+    /* flex-wrap: wrap; */
+    overflow: auto scroll;
+}
 
+.list-items .item {
+    width: 15%;
+    border: 0.5px solid rgb(232, 232, 232);
+    box-shadow: rgba(0, 0, 0, 0.04) 2px 2px 8px;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.item .item-img img {
+    width: 100%;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.item-details .item-name {
+    font-size: 12px;
+    font-weight: var(--fw-700);
+}
+
+.item-details .item-weight {
+    font-size: 10px;
+    color: var(--color-grey);
+}
+
+.item-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-price .price {
+    font-size: 10px;
+    font-weight: var(--fw-900);
+}
+
+.item-price button {
+    font-size: 10px;
+    font-weight: var(--fw-900);
+    text-transform: uppercase;
+    padding: 3px 9px;
+    color: var(--color-green);
+    border: 1px solid var(--color-green);
+    border-radius: 3px;
+    background-color: var(--color-ightest-green);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    top: 85px;
+    background-color: var(--color-grey-2);
+}
 
 
 
